@@ -1,7 +1,5 @@
 package se.lexicon;
 
-import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
-
 public class App {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -42,6 +40,8 @@ public class App {
         int testAge = 20;
         if (testAge >= 18) {
             System.out.println(" You can have som Coca Cola");
+        } else if (testAge < 18 && testAge >= 15) {
+            System.out.println("You can drive a bike but stay away from sugar");
         } else {
             System.out.println("Stick to water");
         }
@@ -66,14 +66,45 @@ public class App {
         name = name.concat(" Svahn");
         System.out.println("name = " + name);
 
+        String firstName = "Samuel";
+        String lastName = "Svahn";
+        int Age = 29;
+        String hobby = "Gaming";
+        String sentence = firstName + lastName + " is " + Age + " old and likes " + hobby;
+        System.out.println(sentence);
 
-        //Excersies week 1
+
+        //Exercise 1 week 41 name
 
         // number 1
         System.out.println("Hello");
         System.out.println("Samuel!");
 
-        //number 2
+        //number 2 week 41 Leap year
+
+        int year = 2020;
+        boolean leap = false;
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0)
+                    leap = true;
+                else
+                    leap = false;
+            } else
+                leap = true;
+
+        } else leap = false;
+
+        if (leap)
+            System.out.println(year + " is a leap year.");
+        else
+            System.out.println(year + " is not a leap year.");
+
+
+        //exercise 3 week 41 Calculate
+
+
+
 
 
     }
