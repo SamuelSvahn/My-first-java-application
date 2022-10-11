@@ -7,7 +7,7 @@ public class GuessingGame {
         System.out.println("Welcome to the guessing game!");
 
         Scanner sc = new Scanner(System.in);
-        int k = 5;
+        int k = 100;
         int i , guess;
 
         int number= (int) (Math.random() * 100);
