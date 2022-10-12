@@ -52,12 +52,12 @@ public class Calculator {
 
             System.out.println("Do you want to continue? (Yes or no?");
             String continueOperation = scanner.next();
-            if (continueOperation.equalsIgnoreCase("no")){
+            if (continueOperation.equalsIgnoreCase("no")) {
                 System.out.println("Thanks for trying the calculator");
-                condition = false; {
+                condition = false;
+                {
                     break;
                 }
-
 
 
             }
